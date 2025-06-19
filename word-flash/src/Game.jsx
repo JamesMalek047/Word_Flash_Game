@@ -118,9 +118,12 @@ function Game() {
                 {/* <button className="menu-item" onClick={resetScore}>
                   Reset Score
                 </button> */}
-                <button className="menu-item" onClick={() => window.location.replace("../../index.html")}>
-                  Return Home
-                </button>
+                <button
+  className="menu-item"
+  onClick={() => window.location.href = `${window.location.origin}/index.html`}
+>
+  Return Home
+</button>
               </div>
             )}
           </div>
@@ -212,9 +215,12 @@ function Game() {
                 setScore(null);
                 setStage("home");
               }}>Change Difficulty</button>
-              <button className="home-button" onClick={() => window.location.replace("../../index.html")}>
-                Go Home
-              </button>
+              <button
+  className="menu-item"
+  onClick={() => window.location.href = `${window.location.origin}/index.html`}
+>
+  Go Home
+</button>
             </div>
           </div>
         </div>
